@@ -2,10 +2,18 @@
 .selected {
   font-size: 10px;
   color: black;
+  cursor: pointer;
 }
 .selectedcss {
   font-size: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid blue;
   color: blue;
-  padding: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+.list {
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
 }

@@ -4,15 +4,19 @@ import './index.css'
 
 const LanguageFilterItem = props => {
   const {eachLangdetails, onChangelang, css} = props
-  const {id} = eachLangdetails
+  const {id, language} = eachLangdetails
 
-  onChangelanguage = () => {
+  const onChangeLanguage = () => {
     onChangelang(id)
   }
-  const cssstatus = css ? 'selectedcss' : 'selected'
+
+  const cssStatus = css ? 'selectedcss' : 'selected'
+  // console.log(cssDetails)
   return (
-    <li className="lanlist" onClick={onChangelanguage}>
-      <h1 className={cssstatus}>{language}</h1>
+    <li>
+      <button type="button" onClick={onChangeLanguage} className="list">
+        <p className={cssStatus}>{language}</p>
+      </button>
     </li>
   )
 }
