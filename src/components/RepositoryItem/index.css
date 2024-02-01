@@ -1,0 +1,35 @@
+/* Write your CSS here */
+.repolist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.eachlistimage {
+  width: 50px;
+  height: 50px;
+}
+.name {
+  font-size: 15px;
+  color: red;
+}
+.countscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.starscont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.countimage {
+  width: 10px;
+  height: 10px;
+}
+.counttext {
+  font-size: 10px;
+  color: black;
+}

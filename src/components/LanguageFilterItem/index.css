@@ -1,0 +1,11 @@
+/* Write your CSS here */
+.selected {
+  font-size: 10px;
+  color: black;
+}
+.selectedcss {
+  font-size: 10px;
+  border-radius: 10px;
+  color: blue;
+  padding: 10px;
+}

@@ -1,0 +1,25 @@
+/* Write your CSS here */
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainheading {
+  font-size: 30px;
+  color: black;
+  font-family: Lobster;
+  font-weight: bold;
+}
+.languagescontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.repositorycontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
