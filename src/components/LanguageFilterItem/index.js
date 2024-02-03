@@ -10,12 +10,16 @@ const LanguageFilterItem = props => {
     onChangelang(id)
   }
 
-  const cssStatus = css ? 'selectedcss' : 'selected'
+  const cssStatus = css ? 'selectedcss' : ''
   // console.log(cssDetails)
   return (
     <li>
-      <button type="button" onClick={onChangeLanguage} className="list">
-        <p className={cssStatus}>{language}</p>
+      <button
+        type="button"
+        onClick={onChangeLanguage}
+        className={`selected ${cssStatus}`}
+      >
+        <p className="">{language}</p>
       </button>
     </li>
   )
