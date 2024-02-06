@@ -7,13 +7,13 @@ const RepositoryItem = props => {
   const {name, issuesCount, forksCount, starsCount, avatarUrl} = eachRepodetails
   return (
     <li className="repolist">
-      <img src={avatarUrl} alt="avatar" className="eachlistimage" />
+      <img src={avatarUrl} alt={name} className="eachlistimage" />
       <h1 className="name">{name}</h1>
       <div className="countscontainer">
         <div className="starscont">
           <img
             src="https://assets.ccbp.in/frontend/react-js/stars-count-img.png"
-            alt="start"
+            alt="stars"
             className="countimage"
           />
           <p className="counttext">{`${starsCount} stars`}</p>
@@ -21,7 +21,7 @@ const RepositoryItem = props => {
         <div className="starscont">
           <img
             src="https://assets.ccbp.in/frontend/react-js/forks-count-img.png"
-            alt="start"
+            alt="forks"
             className="countimage"
           />
           <p className="counttext">{`${forksCount} stars`}</p>
@@ -29,7 +29,7 @@ const RepositoryItem = props => {
         <div className="starscont">
           <img
             src="https://assets.ccbp.in/frontend/react-js/issues-count-img.png"
-            alt="start"
+            alt="open issues"
             className="countimage"
           />
           <p className="counttext">{`${issuesCount} stars`}</p>
