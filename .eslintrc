@@ -58,3 +58,9 @@
     "radix": "off"
   }
 }
+
+  module.exports = {
+  // Other ESLint configurations...
+  ignorePatterns: ["node_modules/"],
+};
+
