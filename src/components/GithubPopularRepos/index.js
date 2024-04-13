@@ -54,8 +54,7 @@ class GithubPopularRepos extends Component {
         repositoryList: updateData,
         apiStatus: apiStatusConstants.success,
       })
-    }
-    if (response.status === 401) {
+    } else if (response.status === 401) {
       this.setState({apiStatus: apiStatusConstants.failure})
     }
   }
